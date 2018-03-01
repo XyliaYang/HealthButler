@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/img_disease"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:src="@drawable/method1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="慢性胃炎"/>
+        <TextView
+            android:id="@+id/tv_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#bbbbbb"
+            android:maxLines="3"
+            android:textSize="14dp"
+            android:text="胃肠疾病的治疗需要症结合查作全面诊断，而大部分反复发作的胃肠疾病只是单纯治了症。
+       例如胃溃疡，治疗的根本不是在于抑制胃酸分泌，而是修复受损粘膜之余，阻断幽门螺杆菌的感染。"
+            android:layout_below="@id/tv_result"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

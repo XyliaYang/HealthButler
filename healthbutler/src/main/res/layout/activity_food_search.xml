@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food2"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/linearLayout2">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/search_food"
+            android:id="@+id/iv_search" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/et_editor"
+            android:textColor="@color/white"
+            android:hint="请输入食物名称"
+            android:layout_weight="0.50" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/scan_food"
+            android:id="@+id/iv_scanning" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_searchlist"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        />
+
+</RelativeLayout>

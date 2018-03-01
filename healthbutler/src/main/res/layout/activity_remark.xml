@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/primary_2"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arrow_left_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="备注信息"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/btn_modify"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iv_back"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/after_bianji_queren" />
+
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/et_remark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="备注信息..."
+        android:padding="10dp" />
+
+
+</LinearLayout>

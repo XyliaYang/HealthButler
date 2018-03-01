@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <com.mialab.sleepangel.view.ColorArcProgressBar
+        android:id="@+id/capb_signrank"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        app:back_color="@android:color/darker_gray"
+        app:back_width="2dp"
+        app:front_color1="#69cbd2"
+        app:front_color2="#7eb6e2"
+        app:front_color3="#989df7"
+        app:front_width="10dp"
+        app:is_need_content="true"
+        app:is_need_title="true"
+        app:is_need_unit="true"
+        app:max_value="300"
+        app:string_title="您已经累计签到:"
+        app:string_unit="次"
+        app:total_engle="270"></com.mialab.sleepangel.view.ColorArcProgressBar>
+
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:text="第1名"
+        android:textSize="20sp" />
+</RelativeLayout>

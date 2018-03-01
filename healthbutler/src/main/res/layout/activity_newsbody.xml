@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FB4747">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="新闻标题"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+</LinearLayout>

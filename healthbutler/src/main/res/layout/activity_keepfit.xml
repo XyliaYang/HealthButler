@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#35b4c2"
+        android:padding="5dp"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ib_back"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@+id/ib_back"
+            android:layout_toRightOf="@+id/ib_back"
+            android:textColor="@color/white"
+            android:text="还需摄入" />
+
+
+
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="还需摄入"
+            android:layout_alignTop="@+id/textView25"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="88dp"
+            android:layout_marginEnd="88dp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1335"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ib_back"
+            android:layout_toEndOf="@+id/ib_back" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大卡"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_above="@+id/linearLayout5"
+            android:layout_toRightOf="@+id/textView27"
+            android:layout_toEndOf="@+id/textView27" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="92"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:layout_above="@+id/linearLayout5"
+            android:layout_alignRight="@+id/textView26"
+            android:layout_alignEnd="@+id/textView26"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="29dp" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大卡"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_above="@+id/linearLayout5"
+            android:layout_alignRight="@+id/textView26"
+            android:layout_alignEnd="@+id/textView26" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView27"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout5">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="148" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="今日会瘦"
+                    android:layout_below="@+id/textView32"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="还需减重(g）"
+                    android:layout_below="@+id/textView33"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                >
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="50" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="当前体重(kg)"
+                    android:layout_below="@+id/textView34"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/imageView8"
+        android:background="@drawable/bg_keepfit"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/rl_keep_sport"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView9"
+                android:background="@drawable/ic_keep_item1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运动"
+                android:textColor="@color/grey"
+                android:id="@+id/textView35"
+                android:layout_below="@+id/imageView9"
+                android:layout_alignLeft="@+id/imageView9"
+                android:layout_alignStart="@+id/imageView9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="再练19分钟的课程视频，或步行65分钟吧。"
+                android:id="@+id/textView38"
+                android:layout_marginLeft="34dp"
+                android:layout_marginStart="34dp"
+                android:layout_above="@+id/textView35"
+                android:layout_toRightOf="@+id/textView35"
+                android:layout_toEndOf="@+id/textView35" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_keep_diet"
+            android:background="@color/white"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView10"
+                android:background="@drawable/ic_keep_item2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="饮食"
+                android:textColor="@color/grey"
+                android:id="@+id/textView36"
+                android:layout_below="@+id/imageView10"
+                android:layout_alignLeft="@+id/imageView10"
+                android:layout_alignStart="@+id/imageView10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今天还可以吃334大卡的主食，668大卡的果蔬，334大卡的肉蛋奶。"
+                android:id="@+id/textView39"
+                android:layout_marginLeft="37dp"
+                android:layout_marginStart="37dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView36"
+                android:layout_toEndOf="@+id/textView36" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_marginTop="2dp"
+            android:id="@+id/rl_keep_girth"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView11"
+                android:background="@drawable/ic_keep_item3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="27dp"
+                android:layout_marginStart="27dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="围度"
+                android:id="@+id/textView37"
+                android:textColor="@color/grey"
+                android:layout_below="@+id/imageView11"
+                android:layout_alignLeft="@+id/imageView11"
+                android:layout_alignStart="@+id/imageView11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未知，需要你去完善围度信息。"
+                android:id="@+id/textView40"
+                android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_alignBottom="@+id/imageView11"
+                android:layout_toRightOf="@+id/textView37"
+                android:layout_toEndOf="@+id/textView37" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

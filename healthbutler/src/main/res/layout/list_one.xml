@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_user_inf"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/default_head"
+            app:civ_border_color="#FFF"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="点击登陆"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="This is my personalized sighnature"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_update_inf"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/update_inf" />
+
+
+</RelativeLayout>
+
+
+

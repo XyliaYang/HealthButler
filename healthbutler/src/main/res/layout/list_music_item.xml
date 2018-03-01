@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/iv_music_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic_item_list_default" />
+
+    <TextView
+        android:id="@+id/tv_music_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_music_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+    <ToggleButton
+        android:id="@+id/tb_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/togle_music_selector"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:textOff=""
+        android:textOn="" />
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:src="@drawable/menu" />
+
+</RelativeLayout>

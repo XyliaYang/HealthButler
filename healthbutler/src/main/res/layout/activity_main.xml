@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_1_bg"
+    android:orientation="vertical">
+
+    <com.mialab.healthbutler.view.NoScrollViewPager
+        android:id="@+id/vp_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_botton_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/btn_tab_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_community"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/btn_tab_community_selector"
+            android:text="社区" />
+
+        <RadioButton
+            android:id="@+id/rb_usercenter"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/btn_tab_usercenter_selector"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>

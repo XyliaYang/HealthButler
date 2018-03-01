@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mialab.healthbutler"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SENSOR_INFO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 电源管理权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".app.SleepAngleApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- 启动高德地图服务 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="ef88a755b97500185dee5319604714d3" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.UserGuideActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.NewsBodyActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.CheckPhoneNumActivity" />
+        <activity android:name=".activity.PostCheckNumActivity" />
+        <activity android:name=".activity.PostUserInfActivity" />
+        <activity android:name=".activity.UserInfActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity
+            android:name=".activity.WriteActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".activity.SignActivity" />
+        <activity android:name=".activity.GetCheckCodeActivity" />
+        <activity android:name=".activity.PostNewPasswordActivity" />
+        <activity android:name=".activity.MusicActivity" />
+        <activity android:name=".activity.FeedbackActivity" />
+        <activity android:name=".activity.WeatherActivity" />
+        <activity android:name=".activity.ImageDetailActivity" />
+        <activity android:name=".activity.TaskListActivity" />
+        <activity android:name=".activity.AddTaskActivity" />
+        <activity android:name=".activity.TaskDetailActivity" />
+        <activity android:name=".activity.HealthShowActivity" />
+        <activity android:name=".activity.HealthTestActivity" />
+        <activity android:name=".activity.ShowMapActivity" />
+        <activity android:name=".activity.HistoryStepShowActivitys" />
+        <activity android:name=".activity.ShowRecordline" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activity.RemarkActivity" />
+        <activity android:name=".activity.TypeListActivity" />
+        <activity android:name=".activity.CaptureActivity" />
+        <activity android:name=".activity.FoodSearchActivity" />
+        <activity android:name=".activity.FoodDisplayActivity" />
+        <activity
+            android:name=".activity.DiagnoseRecord"
+            android:theme="@style/AppThemeprice" />
+        <activity android:name=".activity.HealthRecordActivity" />
+
+        <service android:name=".service.MusicService">
+            <intent-filter>
+                <action android:name="com.mialab.sleepangel.musicservice" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.StepCounterService" />
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <receiver android:name=".receiver.BackgroundNextMusicReceiver">
+            <intent-filter>
+                <action android:name="com.mialab.sleepangel.nextmusicreceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.NotificationClickReceiver" />
+        <receiver android:name=".receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.FindHospitalActivity" />
+        <activity
+            android:name=".activity.HosDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".activity.DoctorListActivity" />
+        <activity android:name=".activity.FindDoctorActivity" />
+        <activity android:name=".activity.DoctorDetailActivity" />
+        <activity android:name=".activity.CheckDiseaseActivity"/>
+        <activity android:name=".activity.DiseaseDetailActivity"/>
+        <activity android:name=".activity.DiseaseListActivity"/>
+        <activity
+            android:name=".activity.DiagnoseActivity"
+            android:label="@string/title_activity_diagnose"
+            android:theme="@style/AppThemeprice"></activity>
+        <activity android:name=".activity.LandActivity" />
+        <activity
+            android:name=".activity.HealthAlertActviity"
+            android:label="@string/title_activity_health_alert_actviity"></activity>
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.RegisterListActivity" />
+        <activity android:name=".activity.KeepFitActivity" />
+        <activity android:name=".activity.RegisterDateActivity"></activity>
+
+    </application>
+
+</manifest>

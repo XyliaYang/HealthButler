@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:layout_marginRight="20dp"
+    android:background="@null" >
+
+    <TextView
+        android:id="@+id/hrulerunit"
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

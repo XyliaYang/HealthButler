@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="最近记录"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:background="@drawable/sport_map_details"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_step_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:text="九龙医院"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_minute_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:text="3"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/tv_step_count"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_minute_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_minute_count"
+                android:layout_toRightOf="@id/tv_minute_count"
+                android:padding="4dp"
+                android:text="天前"
+                android:textColor="#888888"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="300dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#aaaaaa"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:text="是"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_distance_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:textSize="13dp"
+                    android:text="用药"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tv_distance"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/rl_distance"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:text="鼻塞"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_speed_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:textSize="13dp"
+                    android:text="症状"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tv_speed"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_caloria"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/rl_distance"
+                android:layout_marginLeft="25dp">
+
+                <TextView
+                    android:id="@+id/tv_caloria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:text="是"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_caloria_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:textSize="13dp"
+                    android:text="恢复"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tv_caloria"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="上次记录"/>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:background="@drawable/sport_map_details"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_step_countl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:text="九龙医院"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_minute_countl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:text="30"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/tv_step_countl"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_minute_minl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_minute_countl"
+                android:layout_toRightOf="@id/tv_minute_countl"
+                android:padding="4dp"
+                android:text="天"
+                android:textColor="#888888"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="300dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#aaaaaa"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_distancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv_distancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:text="否"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_distance_kml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:textSize="13dp"
+                    android:text="服药"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tv_distancel"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_speedl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/rl_distancel"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_speedl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:text="腿痛"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_speed_kml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:textSize="13dp"
+                    android:text="症状"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tv_speedl"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_calorial"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/rl_distancel"
+                android:layout_marginLeft="25dp">
+
+                <TextView
+                    android:id="@+id/tv_calorial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:text="是"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_caloria_kmm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:textSize="13dp"
+                    android:text="康复"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tv_calorial"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="提示：最近恢复很多，希望继续保持"/>
+
+</LinearLayout>

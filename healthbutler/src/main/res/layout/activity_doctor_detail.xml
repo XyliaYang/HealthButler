@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#35b4c2">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="医生详情"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape1"
+        >
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/iv_head"
+            android:background="@drawable/doctor"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/tv_name"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/iv_head"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_toEndOf="@+id/iv_head"
+            android:layout_marginLeft="49dp"
+            android:layout_marginStart="49dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/tv_hospital"
+            android:layout_alignBottom="@+id/iv_head"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_toEndOf="@+id/iv_head" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/tv_illness"
+            android:layout_marginLeft="30dp"
+            android:layout_alignTop="@+id/tv_hospital"
+            android:layout_toRightOf="@+id/tv_hospital"
+            android:layout_toEndOf="@+id/tv_hospital" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/tv_detail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="38dp"
+            android:layout_below="@+id/iv_head"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

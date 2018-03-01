@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_background3"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <ImageView 
+            android:id="@+id/img_sex"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sex"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            />
+        
+       <RadioGroup 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginLeft="15dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="20dp"
+           android:layout_below="@id/img_sex"
+           >
+           <RadioButton 
+               android:id="@+id/rb_boy"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:drawableLeft="@drawable/boy"
+               android:button="@null"
+               android:text="男"
+               android:textColor="@drawable/rbselect"
+               android:textSize="20dp"
+               android:layout_margin="15dp"
+               android:drawablePadding="10dp"
+               />
+           <RadioButton 
+               android:id="@+id/rb_girl"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="女"
+               android:textColor="@drawable/rbselect"
+               android:textSize="20dp"
+               android:drawableLeft="@drawable/girl"
+               android:drawablePadding="10dp"
+               android:button="@null"
+               android:layout_margin="15dp"
+               />
+           
+       </RadioGroup>
+       
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true" >
+
+        <ScrollView
+            android:id="@+id/heightruler"
+            android:layout_width="60dp"
+            android:layout_height="270dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/height_ruler"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="20dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/height_ruler_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+        
+         <LinearLayout
+            android:id="@+id/height_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/heightruler" 
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="身高"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/user_height_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="180cm"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        
+         <ImageView
+             android:id="@+id/img_height"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/height"
+             android:layout_below="@id/height_ll"
+             android:layout_toLeftOf="@id/heightruler"
+             android:layout_marginRight="20dp"
+             android:layout_marginTop="40dp"
+             />
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="出生年份"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/user_birth_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="1972"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+
+        
+	<ImageView
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:src="@drawable/birth"
+	    android:layout_centerVertical="true"
+	    />
+        <HorizontalScrollView
+            android:id="@+id/birthruler"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/birthday_ruler"
+            android:scrollbars="none"
+            android:layout_marginRight="25dp" >
+
+            <LinearLayout
+                android:id="@+id/ruler_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    
+    <LinearLayout
+            android:id="@+id/weight_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="体重"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/user_weight_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="60 kg"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/img_birth"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/weight"
+            android:layout_centerVertical="true"/>
+
+        <HorizontalScrollView
+            android:id="@+id/weightruler"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/birthday_ruler"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/weight_ruler_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    
+    <Button 
+        android:id="@+id/btn_setting_complete"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="设置完成"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_sport_stile"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

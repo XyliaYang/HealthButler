@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bejing">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/arrow_left_2" />
+
+        <LinearLayout
+            android:id="@+id/ll_btn_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/iv_back"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_task_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:background="@android:color/transparent"
+                android:text="当前任务"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_task_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/transparent"
+                android:text="完成任务"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_task_detail"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+
+        />
+
+    <ListView
+        android:id="@+id/lv_task_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_task_detail"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        android:visibility="invisible"
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_task_detail"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/add_icon3" />
+
+
+</RelativeLayout>

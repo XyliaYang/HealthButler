@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="医院介绍："
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="6"
+        android:text="“本仁恕博爱之怀，导聪明精微之智，敦廉洁醇良之行”——“创建中央医院记”碑文（1918年1月27日）中寥寥数字，为身处首善之区的北京大学人民医院（原北京中央医院）留下了连亘九十六载的历史印迹，激励人民人不断向“建设医疗、教学、科研、管理与国际接轨的大学医院”的战略目标迈进。 " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="领导班子："
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="15"
+        android:text="姜保国Baoguo Jiang\n北京大学人民医院院长\n主持医院全面工作\n联系电话：88325531\n\n陈红Hong Chen\n北京大学人民医院党委书记\n全面负责医院党委工作\n联系电话：88325531\n\n刘玉兰Yulan Liu\n北京大学人民医院副院长\n分管运营工作\n联系电话：88325531
+ " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="医院荣誉："
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="10"
+        android:text="首都平安示范医院\n国庆60周年庆祝活动医疗卫生保障工作最佳服务保障奖\n2009年度首都文明单位标兵" />
+</LinearLayout>

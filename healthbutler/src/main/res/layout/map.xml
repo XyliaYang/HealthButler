@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    
+    <ImageView 
+        android:id="@+id/img_back"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/back_on_map"
+        android:layout_margin="10dp"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:background="@drawable/sport_map_details"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            
+             
+            <TextView 
+                android:id="@+id/tv_step_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                android:text="2024"
+                android:layout_marginLeft="70dp"
+                />
+            
+            <TextView
+                android:id="@+id/tv_step_bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_step_count"
+                android:layout_toRightOf="@id/tv_step_count"
+                android:padding="5dp"
+                android:text="步"
+                android:textColor="#888888"
+                android:textSize="15dp" />
+            
+            <TextView 
+                android:id="@+id/tv_minute_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                android:text="23"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@id/tv_step_count"
+                />
+            
+            <TextView
+                android:id="@+id/tv_minute_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_minute_count"
+                android:layout_toRightOf="@id/tv_minute_count"
+                android:padding="5dp"
+                android:text="用时"
+                android:textColor="#888888"
+                android:textSize="15dp" />
+            
+        </RelativeLayout>
+        <View 
+            android:layout_width="300dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#aaaaaa"
+            />
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            >
+            <RelativeLayout 
+                android:id="@+id/rl_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+                
+                <TextView 
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:text="1.6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    />
+                 <TextView 
+                    android:id="@+id/tv_distance_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:textSize="13dp"
+                    android:text="距离(km)"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tv_distance"
+                    />
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/rl_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/rl_distance"
+                android:layout_marginRight="45dp">
+                
+                <TextView 
+                    android:id="@+id/tv_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:text="4.1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    />
+                 <TextView 
+                    android:id="@+id/tv_speed_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:textSize="13dp"
+                    android:text="速度(m/s)"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tv_speed"
+                    />
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/rl_caloria"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/rl_distance"
+                android:layout_marginLeft="45dp">
+                
+                <TextView 
+                    android:id="@+id/tv_caloria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:text="117"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    />
+                 <TextView 
+                    android:id="@+id/tv_caloria_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:textSize="13dp"
+                    android:text="热量(kcal)"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tv_caloria"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

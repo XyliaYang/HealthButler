@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272530"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E1F33">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="7dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:text="找回密码"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="我们将会给你的手机发送验证码"
+            android:textColor="#616277"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp">
+
+
+        <EditText
+            android:id="@+id/et_phone_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="17dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_bg"
+            android:hint="填写您的注册手机号"
+            android:padding="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:text="发送验证码"
+            android:textColor="@android:color/darker_gray" />
+
+        <ProgressBar
+            android:id="@+id/pb_checknum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

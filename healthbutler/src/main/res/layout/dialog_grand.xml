@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:text="点赞"
+        android:textColor="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/btn_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_bg"
+        android:text="举报"
+        android:textColor="@android:color/darker_gray" />
+
+</LinearLayout>

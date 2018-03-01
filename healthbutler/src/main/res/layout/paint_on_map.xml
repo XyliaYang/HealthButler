@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#cc333333"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gps_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="GPS定位中..."
+                android:textColor="#eeeeee"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="实时信息统计"
+                android:textColor="#eeeeee"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="0.00"
+                android:textColor="#ffffff"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_distance"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tv_distance"
+                android:padding="5dp"
+                android:text="公里"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_times"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/tv_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共计时间"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv_time_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_times"
+                    android:layout_centerHorizontal="true"
+                    android:text="00:00"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/tv_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平均配速"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv_speedcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_speed"
+                    android:layout_centerHorizontal="true"
+                    android:text="0m/s"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_calorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/tv_calorias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="消耗热量"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv_caloias_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_calorias"
+                    android:layout_centerHorizontal="true"
+                    android:text="0 kcal"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/manual_pause_state"
+        layout="@layout/manual_pause_state"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14.0dip"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginRight="9.0dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fuming_test"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14.0dip"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginRight="9.0dip"
+        android:gravity="left|center"
+        android:orientation="vertical">
+
+
+        <com.mialab.healthbutler.view.SliderRelativeLayout
+            android:id="@+id/slider_ralative_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:background="@drawable/manual_pause_background">
+
+            <ImageView
+                android:id="@+id/imageview_slide"
+                android:layout_width="wrap_content"
+                android:layout_height="55.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:src="@drawable/manual_start_background" />
+
+            <TextView
+                android:id="@+id/slide_pause_text"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="滑动暂停"
+                android:textColor="#ffb9b9b9"
+                android:textSize="18.0dip" />
+
+        </com.mialab.healthbutler.view.SliderRelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

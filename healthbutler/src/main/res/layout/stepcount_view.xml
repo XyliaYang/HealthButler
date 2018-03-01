@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#33c3c9">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/ao5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:alpha="200"
+            android:text="运动"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f1f1f1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:text="近七日运动情况"
+            android:textColor="#010101" />
+    </LinearLayout>
+
+    <com.mialab.healthbutler.view.HistoryStepShowView
+        android:id="@+id/history_view"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_caloria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_caloria"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="3523"
+                android:textSize="28dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_caloria"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="热量千卡"
+                android:textColor="#666666"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/rl_caloria">
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="30"
+                android:textSize="28dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_distance"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="长度千米"
+                android:textColor="#666666"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/rl_caloria">
+
+            <TextView
+                android:id="@+id/tv_stepcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="50000"
+                android:textSize="28dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_stepcount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="总计步数"
+                android:textColor="#666666"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/rl_caloria"
+            android:background="#888888" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/rl_caloria"
+            android:background="#888888" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_sportstring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="运动记录" />
+
+    <ListView
+        android:id="@+id/lv_steprecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>

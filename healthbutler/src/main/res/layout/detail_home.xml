@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#22111111">
+
+                <Button
+                    android:id="@+id/btn_left_menu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/edit_bodys" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:alpha="200"
+                    android:text="健康管家"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/btn_share"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="12dp"
+                    android:alpha="200"
+                    android:src="@drawable/btn_share" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/weather_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/cloudy" />
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/weather_icon"
+                    android:text="20°C"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/air_pollution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@id/weather_icon"
+                    android:text="PM2.5:69"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <!-- progressbar -->
+            <include layout="@layout/progressbar" />
+
+            <!-- 相当于多少食物 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_food_structrue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="大约消耗了两个 ~ "
+                    android:textColor="#fa6501"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/img_food_structrue_time"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/tv_food_structrue"
+                    android:src="@drawable/hamburger" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_caloria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/tv_caloria"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_caloria"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="热量千卡"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/rl_caloria">
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="2.6"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_distance"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="长度千米"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/rl_caloria">
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="45"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_time"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="活跃分钟"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toLeftOf="@id/rl_caloria"
+                    android:background="#eeeeee" />
+
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/rl_caloria"
+                    android:background="#eeeeee" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sport_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:text="今天运动没够数？↓"
+                android:textColor="#111111"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/btn_sport"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_sport_stile"
+                android:text="开      始      运      动"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#17182D"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E1F33">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="7dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:text="摇一摇签到"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/ib_share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_menu_share" />
+    </RelativeLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本月签到次数为"
+        android:layout_alignBottom="@id/tv_shake_times"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:textSize="30sp"
+        android:textColor="@android:color/darker_gray"
+        />
+
+    <TextView
+        android:id="@+id/tv_signNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_above="@id/tv_shake_times"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        />-->
+
+    <com.mialab.healthbutler.view.ColorArcProgressBar
+        android:id="@+id/capb_signtime"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/rl_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        app:back_color="@android:color/darker_gray"
+        app:back_width="10dp"
+        app:front_color1="@color/colorAccent"
+        app:front_width="10dp"
+        app:is_need_content="true"
+        app:is_need_title="true"
+        app:is_need_unit="true"
+        app:max_value="100"
+        app:string_title="你的累计签到次数为:"
+        app:string_unit="次"
+        app:total_engle="360" />
+
+    <TextView
+        android:id="@+id/tv_shake_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capb_signtime"
+        android:layout_centerHorizontal="true"
+        android:text="摇一摇签到"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shake_times"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="你今天共走了0步"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/tv_step"
+        android:layout_marginTop="7dp"
+        android:background="#494953"
+        android:gravity="center"
+        android:text="分享到朋友圈"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_step"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/iv_qq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/qq" />
+
+        <ImageView
+            android:id="@+id/iv_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/wechat" />
+    </LinearLayout>
+</RelativeLayout>

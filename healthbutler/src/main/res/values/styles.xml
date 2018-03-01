@@ -1,0 +1,51 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.-->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+
+    <!-- 底栏RadioButton的样式 -->
+    <style name="BottomTabStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.DeviceDefault.Dialog.Alert">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="add_task_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="AppThemeprice" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>
